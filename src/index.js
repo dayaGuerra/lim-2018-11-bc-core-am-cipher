@@ -19,3 +19,11 @@ const valorEspacios = parseInt(espacios.value);
 const resultado = descifrado(valorEspacios, valorCajaUno);
 mostrarResultado.innerHTML=resultado;
 });
+
+/*botonUno.addEventListener("click",function(event){
+  event.preventDefault();
+const valorCajaUno = caja1.value.toUpperCase();
+const valorEspacios = parseInt(espacios.value);
+const resultado = cifrado(valorEspacios, valorCajaUno);
+mostrarResultado.innerHTML=resultado;
+});*/
