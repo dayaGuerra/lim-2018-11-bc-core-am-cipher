@@ -1,5 +1,6 @@
 window.cipher = {
-function cifrado(offset, text){
+
+cifrado: (offset, text) => {
   let arr = [];
   for (let i = 0; i < text.length; i++) {
     if (text.charCodeAt(i) >= 65 && text.charCodeAt(i) <= 90){
@@ -11,13 +12,13 @@ function cifrado(offset, text){
 
   }
   return arr.join('');
-};
+},
 
-function descifrado(offset, text){
+descifrado: (offset, text) => {
   let arr = [];
   for (let i = 0; i < text.length; i++) {
     if (text.charCodeAt(i) >= 65 && text.charCodeAt(i) <= 90){
-      arr.push(String.fromCharCode((text.charCodeAt(i)-offset+65)%26+65));
+      arr.push(String.fromCharCode((text.charCodeAt(i)-90-offset)%26+90));
     }
     else if (text.charCodeAt(i) < 65) {
       arr.push(text[i])
@@ -25,6 +26,6 @@ function descifrado(offset, text){
 
   }
   return arr.join('');
-};
+}
 
 };
