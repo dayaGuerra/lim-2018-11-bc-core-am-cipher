@@ -2,33 +2,48 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Cifrado/descifrado</title>
+    <title>Spoiler Encryption</title>
     <link rel="stylesheet" href="style.css">
 
   </head>
   <body class="cuerpo">
-    <div class="pantalla1">
-        <div class="imagen"></div>
-    </div>
+    <div class="pantalla1"><div class="imagen"> <span>Di el final de la pelicula sin remordimiento</span> </div></div>
 
+    <a href="#openModal" title="Abrir Ventana" class="open">Te Spoileo los pasos :D </a>
+    <section id="openModal" class="modalDialog">
+      <section>
+        <a href="#close" title="Cerrar" class="close"> X </a>
+        <section class="pasos">
+        <h2> PASOS </h2>
+        <p><span class="viñeta">1.-</span> Coloca un número en la casilla</p>
+        <p><span class="viñeta">2.-</span> Escribe tu spoiler</p>
+        <p><span class="viñeta">3.-</span> Copia tu texto, y comparte</p>
+        <p>No olvides enviar el número que pusiste para que lo puedan descifrar <p>
+        </section>
+      </section>
+    </section>
     <form>
       <div class="cajaBotones">
-        <input id="espacios" min="0" type="number" value="0"/>
+        <input id="espacios" min="0" type="number" value="0" />
         <button class="btn01" type="button" id="btn-cifrar">Cifrar</button>
         <button class="btn02" type="button" id="btn-descifrar">Descifrar</button>
       </div>
 
       <div class="total">
 
-          <textarea id= "caja1"></textarea>
+          <textarea id= "caja1" placeholder="Escribe tu texto aqui"></textarea>
 
         <div class="resultado"><span id="contenido2"></span>
+
         </div>
+        <div class="codigo"><span id="contenido3"></span> 
       </div>
       </form>
-      <div class="tres">
       <!--  <button id="copy">Copy</button>
+      <div class="tres">
       </div>-->
+
+
 
     <script type="text/javascript" src="cipher.js">
     </script>

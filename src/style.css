@@ -1,13 +1,97 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
     zoom: 1;
 }
+body{
+  font: normal 20px arial,sans-serif;
+  color:#2D3134;
 
-form {
-  padding: 10px;
+}
+.viñeta{
+  font-size: 25px;
+}
+.pasos{
+  text-shadow: 0 0 10px black;
+}
+.modalDialog {
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  background: rgba(0,0,0,0.8);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  position: fixed;
+  pointer-evets: none;
+  transition: opacity 400ms ease-in;
+  z-index: -2;
 }
 
+ .modalDialog:target {
+  opacity: 1;
+  pointer-events: all;
+  z-index:5;
+ }
+.imagen{
+  text-align: center;
+  text-align: center;
+    color: #fffcfc;
+    text-shadow: 0 0 6px black;
+    padding: 8.5em 0em 0em 2em;
+}
+ .close:hover {
+   background: #000;
+ }
+
+ .close {
+  background: #891a1a;
+  border-radius:3px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 23px;
+  position: absolute;
+  right: 5px;
+  text-align: center;
+  text-decoration: none;
+  top: 5px;
+  width: 30px;
+ }
+
+ .modalDialog > section {
+  background: #bcbcbc;
+  background-image: url("https://i.pinimg.com/originals/54/0e/9f/540e9fdb959567e4a165e64fa448b6b1.gif");
+  box-shadow: 0px 0px 10px #000;
+  border-radius: 3px;
+  color: #fff;
+  margin: 3% auto;
+  padding: 20px;
+  position: relative;
+  width: 400px;
+ }
+
+ .modalDialog > section h2 {
+   color: #fff;
+   font-size: 40px;
+   margin-bottom: 10px;
+ }
+
+ .modalDialog > div p {
+  color: #aaa;
+  font-size: 20px;
+  text-shadow: 0px 1px 0px #d9d9d9;
+ }
+a.open{
+  text-align:right;
+}
+
+/*fin de la pantalla emergente*/
+form {
+  padding: 10px;
+  }
 textarea{
   border-color: #bcbcbc;
   width: 45%;
@@ -18,15 +102,13 @@ textarea{
 }
 
 div.pantalla1{
-
-background-image: url("https://www.empiricus.com.br/wp-content/uploads/2018/04/shutterstock-487658314-1-608x405.jpg");
+  background-image: url("https://www.empiricus.com.br/wp-content/uploads/2018/04/shutterstock-487658314-1-608x405.jpg");
   background-color: #c33c39;
   height: 200px;
   background-position: left;
   background-repeat: no-repeat;
   position:initial;
-  border-bottom: 6px solid #8c2624;
-}
+  }
 
 div.total, .cajaBotones{
   display: flex;
@@ -34,18 +116,37 @@ div.total, .cajaBotones{
   justify-content: flex-start;
   margin-top: 15px;
 }
+
+a.open{
+  display: inline;
+  float: right;
+  text-decoration:none;
+  transition:all ease 0.3s;
+}
+div.codigo{
+  margin-top: 20px;
+  margin-left: auto;
+  border-style: solid;
+  border-color:#2D3134;
+  border-radius: 5px;
+  width: 25%;
+  min-height: 20%;
+  padding: 2px 6px 40px 0 ;
+  font: normal 15px arial,sans-serif;
+  overflow: visible;
+}
 div.resultado {
     margin-left: auto;
     background: #bcbcbc;
     border-radius: 5px;
-    width: 50%;
+    width: 45%;
     padding: 15px;
     min-height: 100px;
     font: normal 20px arial,sans-serif;
     overflow: auto;
 }
 
-.cajaBotones{
+.cajaBotones, a.open{
   position: relative;
   margin-top: 2%;
 }
@@ -59,10 +160,19 @@ input{
   font: normal 20px arial,sans-serif;
 }
 
-.btn01,.btn02{
+.btn01,.btn02, a.open{
 	background-color: #c33c39;
 	border-radius: 10px;
 	padding: 10px 30px;
   font-size: 20px;
 	color: #FFFF;
+}
+
+/*-- Esto es para que se adapte en una pantalla de un movil --*/
+@media screen and (max-width:480px) {
+  .modalDialog > section {
+    padding:3%;
+    height:auto;
+    width:94%;
+  }
 }
