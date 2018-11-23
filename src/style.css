@@ -104,6 +104,7 @@ textarea{
 div.pantalla1{
   background-image: url("https://www.empiricus.com.br/wp-content/uploads/2018/04/shutterstock-487658314-1-608x405.jpg");
   background-color: #c33c39;
+  border-bottom: 6px solid #7f2323; 
   height: 200px;
   background-position: left;
   background-repeat: no-repeat;
