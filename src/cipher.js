@@ -24,6 +24,9 @@ decode: (offset, string) => {
     if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90){
       arr.push(String.fromCharCode((string.charCodeAt(i)-90-offset)%26+90));
     }
+    if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122){
+      arr.push(String.fromCharCode((string.charCodeAt(i)-122-offset)%26+122));
+    }
     else if (string.charCodeAt(i) < 65) {
       arr.push(string[i])
     }
