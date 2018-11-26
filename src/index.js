@@ -1,10 +1,10 @@
-const caja1 = document.getElementById('caja1');
-const espacios = document.getElementById('espacios');
+const inputText = document.getElementById('inputText');
+const offset = document.getElementById('offset');
 //const btnCopy = document.getElementById('copy');
-const botonUno = document.getElementById('btn-cifrar');
-const botonDos = document.getElementById('btn-descifrar');
-const mostrarResultado= document.getElementById('contenido2');
-const codigo= document.getElementById('contenido3');
+const btnEncode = document.getElementById('btn-encode');
+const btnDecode = document.getElementById('btn-decode');
+const outputText= document.getElementById('outputText');
+const reference= document.getElementById('reference');
 /*btnCopy.addEventListener("click", function(elemento){
 //  event.preventDefault();
 elemento = mostrarResultado.value;
@@ -14,19 +14,21 @@ elemento = mostrarResultado.value;
 */
 
 
-botonUno.addEventListener("click",function(event){
+btnEncode.addEventListener("click",function(event){
   event.preventDefault();
-const valorCajaUno = caja1.value.toUpperCase();
-const valorEspacios = parseInt(espacios.value);
-const resultado = cipher.cifrado(valorEspacios, valorCajaUno);
-mostrarResultado.innerHTML= resultado;
-codigo.innerHTML="<br> El codigo para descifrar es: " + valorEspacios;
+const valueInputText = inputText.value.toUpperCase();
+const valueOffset = parseInt(offset.value);
+const result = cipher.encode(valueOffset, valueInputText);
+outputText.innerHTML= result;
+reference.innerHTML="<br> El codigo para descifrar es: " + valueOffset;
 });
 
-botonDos.addEventListener("click", function(event){
-event.preventDefault();
-const valorCajaUno = caja1.value.toUpperCase();
-const valorEspacios = parseInt(espacios.value);
-const resultado = cipher.descifrado(valorEspacios, valorCajaUno);
-mostrarResultado.innerHTML=resultado;
+
+btnDecode.addEventListener("click",function(event){
+  event.preventDefault();
+const valueInputText = inputText.value.toUpperCase();
+const valueOffset = parseInt(offset.value);
+const result = cipher.decode(valueOffset, valueInputText);
+outputText.innerHTML= result;
+reference.innerHTML="<br> El codigo cifrado fue: " + valueOffset;
 });

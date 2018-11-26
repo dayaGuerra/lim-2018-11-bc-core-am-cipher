@@ -1,6 +1,6 @@
 window.cipher = {
 
-cifrado: (offset, string) => {
+encode: (offset, string) => {
   let arr = [];
   for (let i = 0; i < string.length; i++) {
     if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90){
@@ -18,7 +18,7 @@ cifrado: (offset, string) => {
   return arr.join('');
 },
 
-descifrado: (offset, string) => {
+decode: (offset, string) => {
   let arr = [];
   for (let i = 0; i < string.length; i++) {
     if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90){
