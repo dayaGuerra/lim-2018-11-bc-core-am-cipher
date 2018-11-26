@@ -1,4 +1,35 @@
-# Cifrado César
+# Encryption Spoiler
+
+![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+
+Esta pagina se ha sido creada para aquellos usuarios que buscan **anticiparse** a la trama de una película, libro u otra obra.
+
+Es necesario, ya que **NO** todos los usuarios buscan saber el  final o descenlace de su película u obra esperada.
+
+Por ello es que nace **"Encryption Spoiler"** una pagina que cifra tu comentario Spoiler y brinda un pequeño código para el usuario, que verdaderamente quiera saber del desenlace de la obra, lo descifre.
+
+¿Cómo funciona?
+
+En el código utilizamos un cifrado cesar, el cual, según el numero de espaciados que le des hará mas complejo tu mensaje.
+
+Ejemplo:
+
+* Espaciado/codigo -> `2`
+
+* Donde A->C
+
+`Este es el final de EL Padrino`** -> `GUVG GU GN HKPCN FG GN RCFTKPQ`
+
+
+
+
+
+
+
+
+
+
+
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
 
@@ -219,7 +250,7 @@ para ver la descripción detallada de cada _habilidad_ y cada _nivel_. Esta es u
    también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
    aunque recomendaría que consideres probar :penguin: GNU/Linux.
 3. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
-   del repo de tu cohort, tus _coaches_ te compartirán un _link_ a un repo y te 
+   del repo de tu cohort, tus _coaches_ te compartirán un _link_ a un repo y te
    darán acceso de lectura en ese repo.
 4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
    tu _fork_ a tu computadora (copia local).

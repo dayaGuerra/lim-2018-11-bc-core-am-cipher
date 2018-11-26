@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Spoiler Encryption</title>
+    <title>Encryption Spoiler </title>
     <link rel="stylesheet" href="style.css">
 
   </head>
@@ -24,19 +24,19 @@
     </section>
     <form>
       <div class="cajaBotones">
-        <input id="espacios" min="0" type="number" value="0" />
-        <button class="btn01" type="button" id="btn-cifrar">Cifrar</button>
-        <button class="btn02" type="button" id="btn-descifrar">Descifrar</button>
+        <input id="offset" min="0" type="number" value="0" />
+        <button class="btn01" type="button" id="btn-encode">Cifrar</button>
+        <button class="btn02" type="button" id="btn-decode">Descifrar</button>
       </div>
 
       <div class="total">
 
-          <textarea id= "caja1" placeholder="Escribe tu texto aqui"></textarea>
+          <textarea id= "inputText" placeholder="Escribe tu texto aqui"></textarea>
 
-        <div class="resultado"><span id="contenido2"></span>
+        <div class="resultado"><span id="outputText"></span>
 
         </div>
-        <div class="codigo"><span id="contenido3"></span> 
+        <div class="codigo"><span id="reference"></span>
       </div>
       </form>
       <!--  <button id="copy">Copy</button>
