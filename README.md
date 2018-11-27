@@ -1,5 +1,6 @@
 # Encryption Spoiler
 
+<<<<<<< HEAD
 ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
 
 Esta pagina se ha sido creada para aquellos usuarios que buscan **anticiparse** a la trama de una película, libro u otra obra.
@@ -9,11 +10,22 @@ Es necesario, ya que **NO** todos los usuarios buscan saber el  final o descenla
 Por ello es que nace **"Encryption Spoiler"** una pagina que cifra tu comentario Spoiler y brinda un pequeño código para el usuario, que verdaderamente quiera saber del desenlace de la obra, lo descifre.
 
 ¿Cómo funciona?
+=======
+Esta pagina se ha sido creada para aquellos usuarios que buscan anticiparse a la trama de una película, libro u otra obra.
+
+Es necesario ya que **NO** todos los usuarios buscan saber el  final o descenlace de su película u obra esperada.
+
+Por ello es que nace "Encryption Spoiler " una pagina que cifra tu comentario Spoiler, y brinda un pequeño código, el cual será utilizado por el usuario, que **verdaderamente** quiera saber sobre el desenlace de la obra, lo descifre.
+
+
+**¿Cómo funciona?**
+>>>>>>> 57e9d130da6510bcd40376ec0b338286c0cdef0c
 
 En el código utilizamos un cifrado cesar, el cual, según el numero de espaciados que le des hará mas complejo tu mensaje.
 
 Ejemplo:
 
+<<<<<<< HEAD
 * Espaciado/codigo -> `2`
 
 * Donde A->C
@@ -21,6 +33,23 @@ Ejemplo:
 `Este es el final de EL Padrino`** -> `GUVG GU GN HKPCN FG GN RCFTKPQ`
 
 
+=======
+* Espaciado/Codigo -> 2
+
+* Dónde A -> C
+
+El abecedario que conoces tomará nuevas letras
+
+=> **A B C D E F G H I J K L M N O P Q R S T U V W X Y Z**
+=> C D E F G H I J K L M N O P Q R S T U V W X Y Z A B
+
+`Este es el final de EL Padrino` -> `GUVG GU GN HKPCN FG GN RCFTKPQ`
+
+![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+
+
+Di el final de la película sin remordimientos, usa  "Encryption Spoiler "
+>>>>>>> 57e9d130da6510bcd40376ec0b338286c0cdef0c
 
 
 
