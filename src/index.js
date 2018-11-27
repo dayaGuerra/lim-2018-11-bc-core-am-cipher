@@ -31,3 +31,4 @@ const result = cipher.decode(valueOffset, valueInputText);
 outputText.innerHTML= result;
 
 reference.innerHTML="<br> El codigo para Cifrado fue: " + valueOffset;
+})
