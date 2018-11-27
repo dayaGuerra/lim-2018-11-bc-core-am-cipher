@@ -1,10 +1,12 @@
 const inputText = document.getElementById('inputText');
 const offset = document.getElementById('offset');
-//const btnCopy = document.getElementById('copy');
 const btnEncode = document.getElementById('btn-encode');
 const btnDecode = document.getElementById('btn-decode');
-const outputText= document.getElementById('outputText');
-const reference= document.getElementById('reference');
+const outputText = document.getElementById('outputText');
+const btnRefresh = document.getElementById('btn-refresh');
+const reference = document.getElementById('reference');
+
+//const btnCopy = document.getElementById('copy');
 /*btnCopy.addEventListener("click", function(elemento){
 //  event.preventDefault();
 elemento = mostrarResultado.value;
@@ -13,22 +15,27 @@ elemento = mostrarResultado.value;
   });
 */
 
-btnEncode.addEventListener("click",function(event){
+btnEncode.addEventListener('click',function(event){
   event.preventDefault();
 const valueInputText = inputText.value;
 const valueOffset = parseInt(offset.value);
 const result = cipher.encode(valueOffset, valueInputText);
 outputText.innerHTML= result;
 
-reference.innerHTML="<br> El codigo para Descifrar es: " + valueOffset;
+reference.innerHTML='El codigo para Descifrar es: ' + valueOffset;
 });
 
-btnDecode.addEventListener("click",function(event){
+btnDecode.addEventListener('click',function(event){
   event.preventDefault();
 const valueInputText = inputText.value;
 const valueOffset = parseInt(offset.value);
 const result = cipher.decode(valueOffset, valueInputText);
 outputText.innerHTML= result;
 
-reference.innerHTML="<br> El codigo para Cifrado fue: " + valueOffset;
+reference.innerHTML='El codigo para Cifrado fue: ' + valueOffset;
 })
+
+btnRefresh.addEventListener('click',function(event){
+  event.preventDefault();
+window.location.href = 'index.html'
+});

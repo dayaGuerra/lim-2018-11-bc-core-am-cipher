@@ -7,9 +7,12 @@
 
   </head>
   <body>
-    <div class="screen"></div>
+    <div class="screen">
+      <img src="image/gato.jpg" alt="gato" />
+    </div>
 
     <a href="#openModal" class="open">Te Spoileo los pasos :D </a>
+    
     <section id="openModal" class="modalDialog">
       <section>
         <a href="#close" class="close"> X </a>
@@ -18,10 +21,11 @@
         <p>1.- Coloca un número en la casilla</p>
         <p>2.- Escribe tu spoiler</p>
         <p>3.- Copia tu texto, y comparte</p>
-        <p class = "texFinal">No olvides enviar el número que pusiste para que lo puedan descifrar. <p>
+        <p class = "texFinal">No olvides enviar el número que pusiste para que lo puedan descifrar. </p>
         </section>
       </section>
     </section>
+
     <form>
       <div class="btns">
         <input id="offset" min="0" type="number" value="0" />
@@ -30,21 +34,16 @@
       </div>
 
       <div class="total">
-
-          <textarea id= "inputText" placeholder="Escribe tu texto aqui"></textarea>
-
-        <div class="result"><span id="outputText"></span>
-
-        </div>
-        <div class="cod"><span id="reference"></span>
-      </div>
+         <textarea id= "inputText" placeholder="Escribe tu texto aqui"></textarea>
+         <div class="result"><span id="outputText"></span></div>
+        <div class="cod"><span id="reference"></span></div>
+    </div>
       </form>
-      <!--  <button id="copy">Copy</button>
-      <div class="tres">
-      </div>-->
 
-
-
+      <div id="refresh">
+        <button id="btn-refresh">Limpiar</button>
+      </div>
+     
     <script type="text/javascript" src="cipher.js">
     </script>
     <script type="text/javascript" src="index.js">
