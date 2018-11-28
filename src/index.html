@@ -2,51 +2,50 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spoiler Encryption</title>
     <link rel="stylesheet" href="style.css">
-
   </head>
-  <body>
-    <div class="screen">
-      <img src="image/gato.jpg" alt="gato" />
-    </div>
 
-    <a href="#openModal" class="open">Te Spoileo los pasos :D </a>
-    
+  <body>
+    <header>
+      <div class="scrn">
+        <img src="image/imagen01.jpg" alt="gato" />
+      </div>
+    </header>
+
+    <div class="btnPoint">
+      <a href="#openModal" class="open">Te Spoileo los pasos :D </a>
+    </div>
     <section id="openModal" class="modalDialog">
       <section>
         <a href="#close" class="close"> X </a>
         <section class="points">
-        <h2> PASOS </h2>
-        <p>1.- Coloca un número en la casilla</p>
-        <p>2.- Escribe tu spoiler</p>
-        <p>3.- Copia tu texto, y comparte</p>
-        <p class = "texFinal">No olvides enviar el número que pusiste para que lo puedan descifrar. </p>
+          <p> PASOS </p>
+          <p>1.- Coloca un número en la casilla</p>
+          <p>2.- Escribe tu spoiler</p>
+          <p>3.- Copia tu texto, y comparte</p>
+          <p class = "texFinal">No olvides enviar el número que pusiste para que lo puedan descifrar. </p>
         </section>
       </section>
     </section>
 
     <form>
       <div class="btns">
-        <input id="offset" min="0" type="number" value="0" />
+        <input id="offset" min="0" type="number" placeholder="Ingresa un número" />
         <button class="btn01" type="button" id="btn-encode">Cifrar</button>
         <button class="btn02" type="button" id="btn-decode">Descifrar</button>
       </div>
-
       <div class="total">
-         <textarea id= "inputText" placeholder="Escribe tu texto aqui"></textarea>
-         <div class="result"><span id="outputText"></span></div>
+        <textarea id= "inputText" placeholder="Escribe tu texto aqui"></textarea>
+        <div class="result"><span id="outputText"></span></div>
         <div class="cod"><span id="reference"></span></div>
-    </div>
-      </form>
-
-      <div id="refresh">
-        <button id="btn-refresh">Limpiar</button>
       </div>
-     
-    <script type="text/javascript" src="cipher.js">
-    </script>
-    <script type="text/javascript" src="index.js">
-    </script>
+    </form>
+
+    <section id="refresh">
+      <button id="btn-refresh">Limpiar</button>
+    </section>
+
   </body>
 </html>
