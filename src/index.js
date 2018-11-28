@@ -5,7 +5,7 @@ const btnDecode = document.getElementById('btn-decode');
 const outputText = document.getElementById('outputText');
 const btnRefresh = document.getElementById('btn-refresh');
 const reference = document.getElementById('reference');
-
+const placeHolderOutput = document.getElementById('placeHolderOutput');
 //const btnCopy = document.getElementById('copy');
 /*btnCopy.addEventListener("click", function(elemento){
 //  event.preventDefault();
@@ -39,3 +39,5 @@ btnRefresh.addEventListener('click',function(event){
   event.preventDefault();
 window.location.href = 'index.html'
 });
+
+

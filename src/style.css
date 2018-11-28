@@ -78,7 +78,7 @@
   }
   
   div.result {
-  background: #A6A6A7;
+  background: rgba(182, 182, 184, 0.63);
   }
   .total{
   display: flex;
@@ -141,7 +141,19 @@
   margin-top: 7em;
   }
   
+  /*fin de la ventana modal*/
+
+  /*ocultar placeholder de background*/
   
+  .placeHolderOutput span{
+    display: none;
+  }
+
+  .placeHolderOutput span:target {
+    display: block;
+}
+
+
   
   /*.scrn a {
   float: none;
