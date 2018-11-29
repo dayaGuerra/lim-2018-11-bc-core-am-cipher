@@ -2,9 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spoiler Encryption</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
@@ -32,15 +32,16 @@
 
     <form>
       <div class="btns">
-        <input id="offset" min="0" type="number" placeholder="Ingresa un número" />
+        <input id="offset" min="0" type="number" value="0" placeholder="Ingresa un número" />
         <button class="btn01" type="button" id="btn-encode">Cifrar</button>
         <button class="btn02" type="button" id="btn-decode">Descifrar</button>
       </div>
       <div class="total">
         <textarea id= "inputText" placeholder="Escribe tu texto aqui"></textarea>
         <div class="result">
-            <span id= "placeHolderOutput" class="empty-placeholder placeholder">Traducción</span>
-          <span id="outputText"></span></div>
+            <span id= "placeHolderOutput">Traducción</span>
+            <span id="outputText"></span>
+        </div>
         <div class="cod"><span id="reference"></span></div>
       </div>
     </form>
