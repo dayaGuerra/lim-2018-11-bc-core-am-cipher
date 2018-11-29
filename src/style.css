@@ -38,13 +38,18 @@
     top: 2em;
     width: 2.5em;
     }
+    /*centrado de imagen en pantalla modal*/
   
+    .modalDialog > section{
+      background-image: url("https://cdn.pixabay.com/photo/2016/08/23/15/12/popcorn-1614707_960_720.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      
+    }
     /*Tamaño de section con respecto al cuadro de texto referido*/
     .modalDialog > section {
-    background-image: url("https://cdn.pixabay.com/photo/2015/03/05/09/59/camera-660090_960_720.jpg");
     overflow-x: hidden;
-    z-index: 5;
-    background-color: #FFF;
     color:#111;
     position: relative;
     margin: 8% auto;
@@ -78,6 +83,14 @@
   body{
   margin: 0;
   font: normal 15px arial,sans-serif;
+  }
+  button:hover{
+    cursor: pointer;
+    background: #747171;
+  }
+  a:hover{
+    cursor: pointer;
+    background: #747171;
   }
   
   img{
