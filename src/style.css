@@ -181,26 +181,15 @@ margin-top: 1em;
 
   
 
-  /*reference*/
-  
+  /*reference aparece dentro del div total*/
+  #reference{
+    font-size: 0.7em;
+    font-family: 'Courier New', Courier, monospace;
+    float:right;
 
-  
-  /*.scrn a {
-  float: none;
-  color: #FFF;
-  text-align: center;
-  padding: 1em;
-  text-decoration: none;
-  font-size: 1em;
-  border-radius: 0.2em;
   }
-  
-  .scrn a:hover {
-  background-color: red;
-  color: #FFF;
-  }
-  */
-  
+
+
   
   
   

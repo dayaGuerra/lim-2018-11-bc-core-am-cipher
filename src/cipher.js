@@ -29,6 +29,6 @@ window.cipher = {
     }
     return arr.join('');
   }
-  
+ 
   };
   
