@@ -41,7 +41,7 @@
     /*centrado de imagen en pantalla modal*/
   
     .modalDialog > section{
-      background-image: url("https://cdn.pixabay.com/photo/2016/08/23/15/12/popcorn-1614707_960_720.png");
+      background-image: url("./image/popcorn.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -50,19 +50,21 @@
     /*Tamaño de section con respecto al cuadro de texto referido*/
     .modalDialog > section {
     overflow-x: hidden;
-    color:#111;
+    color:#302c2c;
     position: relative;
     margin: 8% auto;
     padding: 20px;
     width: 30em;
     height: auto;
+    
   }
    .texFinal{
     line-height:1em;
     }
     p{
-    font: normal 20px arial,sans-serif;
-    }
+    font: normal 25px arial,sans-serif;
+    box-shadow: #747171  
+  }
     .points{
     margin-top: 5em;
     }
