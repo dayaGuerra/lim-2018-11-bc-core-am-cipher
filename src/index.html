@@ -10,44 +10,52 @@
   <body>
     <header>
       <div class="scrn">
-        <img src="image/imagen01.jpg" alt="imagen01" />
+        <img src="image/imagen01.jpg" alt="gato" />
       </div>
     </header>
 
     <div class="btnPoint">
       <a href="#openModal" class="open">Te Spoileo los pasos :D </a>
     </div>
-    <section id="openModal" class="modalDialog">
+    <div id="openModal" class="modalDialog">
       <section>
         <a href="#close" class="close"> X </a>
         <div id="modalImg">
           
         </div>
-        <section class="points">
-          <p> PASOS </p>
-          <p>1.- Coloca un número en la casilla</p>
-          <p>2.- Escribe tu spoiler</p>
-          <p>3.- Copia tu texto, y comparte</p>
+        <div class="points">
+          <ol>
+          <p> Instrucciones </p>
+          <li value = "1"> Coloca un número en la casilla</li>
+          <li> Escribe tu spoiler</li>
+          <li>Copia tu texto, y comparte</li>
           <p class = "texFinal">No olvides enviar el número que pusiste para que lo puedan descifrar. </p>
-        </section>
+        </ol>
+       
+      </div>
       </section>
-    </section>
+    </div>
 
-    <form>
+    <form id="form_cipher">
+
       <div class="btns">
-        <input id="offset" min="0" type="number"  placeholder="Ingresa un número" value="0"/>
+        <input id="offset" min="0" type="number"  placeholder="Ingresa un número" />
         <button class="btn01" type="button" id="btn-encode">Cifrar</button>
         <button class="btn02" type="button" id="btn-decode">Descifrar</button>
       </div>
+      
       <div class="total">
-        <textarea id= "inputText" placeholder="Escribe tu texto aqui"></textarea>
+       <textarea id= "inputText" placeholder="Escribe tu texto aqui"></textarea>
        <textarea id="outputText" placeholder="Traducción" readonly></textarea>
       </div>
+      <div>
+        <button id="btn_clean_form">Limpiar</button>
+      </div>
+    
     </form>
 
     <section id="refresh">
-      <button id="btn-refresh">Limpiar</button>
-      <button id="btn-copy">Copiar traducción</button>
+        <button id="btn-copy">Copiar traducción</button>
     </section>
 <script src="cipher.js"></script>
 <script src="index.js"></script>
