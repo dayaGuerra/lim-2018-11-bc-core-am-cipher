@@ -35,23 +35,19 @@
 
     <form>
       <div class="btns">
-        <input id="offset" min="0" type="number" value="0" placeholder="Ingresa un número" />
+        <input id="offset" min="0" type="number"  placeholder="Ingresa un número" value="0"/>
         <button class="btn01" type="button" id="btn-encode">Cifrar</button>
         <button class="btn02" type="button" id="btn-decode">Descifrar</button>
       </div>
       <div class="total">
         <textarea id= "inputText" placeholder="Escribe tu texto aqui"></textarea>
-        <div class="result">
-            <span id= "placeHolderOutput">Traducción</span>
-            <span id="outputText"></span>
-            <div class="cod"><span id="reference"></span></div>
-        </div>
-        
+       <textarea id="outputText" placeholder="Traducción" readonly></textarea>
       </div>
     </form>
 
     <section id="refresh">
       <button id="btn-refresh">Limpiar</button>
+      <button id="btn-copy">Copiar traducción</button>
     </section>
 <script src="cipher.js"></script>
 <script src="index.js"></script>

@@ -4,37 +4,33 @@ const btnEncode = document.getElementById('btn-encode');
 const btnDecode = document.getElementById('btn-decode');
 const outputText = document.getElementById('outputText');
 const btnRefresh = document.getElementById('btn-refresh');
-const reference = document.getElementById('reference');
-const placeHolderOutput = document.getElementById('placeHolderOutput');
-
-
-
+const btnCopy = document.getElementById('btn-copy');
 
 btnEncode.addEventListener('click',function(event){
-  event.preventDefault();
-const valueInputText = inputText.value;
-const valueOffset = parseInt(offset.value);
-const result = cipher.encode(valueOffset, valueInputText);
-outputText.innerHTML= result;
-
-placeHolderOutput.style.display='none';
-reference.innerHTML='El codigo para Descifrar es: ' + valueOffset;
-
+   event.preventDefault();
+    const valueInputText = inputText.value;
+    const valueOffset = parseInt(offset.value);
+    const result = cipher.encode(valueOffset, valueInputText);
+    const reference='El codigo para Descifrar es: ' + valueOffset;
+   
+  outputText.innerHTML=  ` ${result}
+  ${reference}`;
 });
 
 btnDecode.addEventListener('click',function(event){
-  event.preventDefault();
-const valueInputText = inputText.value;
-const valueOffset = parseInt(offset.value);
-const result = cipher.decode(valueOffset, valueInputText);
+ event.preventDefault();
+  const valueInputText = inputText.value;
+  const valueOffset = parseInt(offset.value);
+  const result = cipher.decode(valueOffset, valueInputText);
 outputText.innerHTML= result;
-
-placeHolderOutput.style.display='none';
-reference.innerHTML=' El codigo para Cifrado fue: ' + valueOffset;
 })
 
 btnRefresh.addEventListener('click',function(event){
-  event.preventDefault();
-window.location.href = 'index.html'
+event.preventDefault();
+  window.location.href = 'index.html'
 });
 
+btnCopy.addEventListener('click', ()=>{
+  outputText.select();
+  document.execCommand('copy'); 
+});
