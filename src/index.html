@@ -10,19 +10,17 @@
   <body>
     <header>
       <div class="scrn">
-        <img src="image/imagen01.jpg" alt="gato" />
-      </div>
+        <img src="image/imagen01.png" alt="imagen01" />
+             </div>
     </header>
 
     <div class="btnPoint">
-      <a href="#openModal" class="open">Te Spoileo los pasos :D </a>
+      <a href="#open_modal" class="open">Te Spoileo los pasos :D </a>
     </div>
-    <div id="openModal" class="modalDialog">
+    <div id="open_modal" class="modal_dialog">
       <section>
         <a href="#close" class="close"> X </a>
-        <div id="modalImg">
-          
-        </div>
+      
         <div class="points">
           <ol>
           <p> Instrucciones </p>
@@ -40,22 +38,22 @@
 
       <div class="btns">
         <input id="offset" min="0" type="number"  placeholder="Ingresa un número" />
-        <button class="btn01" type="button" id="btn-encode">Cifrar</button>
-        <button class="btn02" type="button" id="btn-decode">Descifrar</button>
+        <button class="btn01" type="button" id="btn_encode">Cifrar</button>
+        <button class="btn02" type="button" id="btn_decode">Descifrar</button>
       </div>
       
       <div class="total">
-       <textarea id= "inputText" placeholder="Escribe tu texto aqui"></textarea>
-       <textarea id="outputText" placeholder="Traducción" readonly></textarea>
+       <textarea id= "input_text" placeholder="Escribe tu texto aqui"></textarea>
+       <textarea id="output_text" placeholder="Traducción" readonly></textarea>
       </div>
-      <div>
-        <button id="btn_clean_form">Limpiar</button>
-      </div>
+    
     
     </form>
 
     <section id="refresh">
+        <button id="btn_clean_form">Limpiar</button>
         <button id="btn-copy">Copiar traducción</button>
+       
     </section>
 <script src="cipher.js"></script>
 <script src="index.js"></script>
