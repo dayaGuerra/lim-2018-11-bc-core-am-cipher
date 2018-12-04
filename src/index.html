@@ -7,54 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body>
+  <body class="body_absolut">
     <header>
       <div class="scrn">
         <img src="image/imagen01.png" alt="imagen01" />
-             </div>
+      </div>
     </header>
-
-    <div class="btnPoint">
-      <a href="#open_modal" class="open">Instrucciones </a>
-    </div>
-    <div id="open_modal" class="modal_dialog">
-      <section>
-        <a href="#close" class="close"> X </a>
-      
-        <div class="points">
-          <ol>
-          <p class="title_modal"> Instrucciones </p>
-          <li value = "1"> Coloca un número en la casilla</li>
-          <li> Escribe tu spoiler</li>
-          <li>Copia tu texto, y comparte</li>
-          <p class = "texFinal">No olvides enviar el número que pusiste para que lo puedan descifrar. </p>
-        </ol>
-       
-      </div>
-      </section>
-    </div>
-
-    <form id="form_cipher">
-
-      <div class="btns">
-        <input id="offset" min="0" type="number"  placeholder="Ingresa un número" />
-        <button class="btn01" type="button" id="btn_encode">Cifrar</button>
-        <button class="btn02" type="button" id="btn_decode">Descifrar</button>
-      </div>
-      
-      <div class="total">
-       <textarea id= "input_text" placeholder="Escribe tu texto aqui"></textarea>
-       <textarea id="output_text" placeholder="Traducción" readonly></textarea>
-      </div>
     
+      <div class="body_cipher">
+        <div class="btnPoint">
+          <a href="#open_modal" class="open">Instrucciones</a>
+        </div>
+        <div id="open_modal" class="modal_dialog">
+          <div>
+            <a href="#close" class="close"> X </a>
+          
+            <div class="points">
+              <p class="title_modal"> Instrucciones </p>
+              <ol id="list">
+                <li> Coloca un número en la casilla</li>
+                <li> Escribe tu spoiler</li>
+                <li>Copia tu texto, y comparte</li>
+              </ol>
+              <p class = "texFinal">No olvides enviar el número que pusiste para que lo puedan descifrar. </p>
+            </div>
+          </div>
+        </div>
     
-    </form>
 
-    <section id="refresh">
-        <button id="btn_clean_form">Limpiar</button>
-        <button id="btn-copy">Copiar traducción</button>
-       
-    </section>
+        <form id="form_cipher">
+
+          <div class="btns">
+            <input id="offset" min="0" type="number"  placeholder="Ingresa un número" />
+            <button class="btn01" type="button" id="btn_encode">Cifrar</button>
+            <button class="btn02" type="button" id="btn_decode">Descifrar</button>
+          </div>
+          
+          <div class="total">
+            <textarea id= "input_text" placeholder="Escribe tu texto aqui"></textarea>
+            <textarea id="output_text" placeholder="Traducción" readonly></textarea>
+          </div>
+        
+        
+        </form>
+
+        <div class="refresh">
+            <button id="btn_clean_form">Limpiar</button>
+            <button id="btn-copy">Copiar traducción</button>
+        </div>
+      </div>  
 <script src="cipher.js"></script>
 <script src="index.js"></script>
   </body>
