@@ -13,28 +13,42 @@
         <img src="image/imagen01.png" alt="imagen01" />
       </div>
     </header>
-    
-      <div class="body_cipher">
+    <div class="body_cipher">
         <div class="btnPoint">
-          <a href="#open_modal" class="open">Instrucciones</a>
+          <button  class="select" id="select">¿Qué es Encrypted Spoiler?</button>
+          
+          <button  class="open" id="open_why">¿Cómo lo uso?</button>
+         
         </div>
         <div id="open_modal" class="modal_dialog">
           <div>
-            <a href="#close" class="close"> X </a>
+            
+            <div class="encrypted" id="inf_encrypted">
+              <h2>¿Qué es Encrypted Spoiler?</h2> 
+              <p>Si tienes muchas ganas de contar el final de una película, pero no deseas arruinarle la trama a nadie, entonces esta aplicación es para ti!  </p>
+                 <p>Con Encrypted Spoiler podrás cifrar los mensajes que quieras compartir, asi solo tus amigos que esten verdaderamente interesados en saber el desenlace de la película lo descifraran. </p>
           
-            <div class="points">
-              <p class="title_modal"> Instrucciones </p>
-              <ol id="list">
-                <li> Coloca un número en la casilla</li>
-                <li> Escribe tu spoiler</li>
-                <li>Copia tu texto, y comparte</li>
-              </ol>
-              <p class = "texFinal">No olvides enviar el número que pusiste para que lo puedan descifrar. </p>
+            <button  class="close" id="btn_close1">cerrar</button>
             </div>
+                     
+<div class="points" id="point">
+<h2> ¿Cómo lo uso? </h2>
+<h3>Es muy sencillo</h3>
+
+<ol id="list">
+  <li><img /> Coloca un número en la primera casilla</li>
+  <li> Escribe tu spoiler y presiona cifrar</li>
+  <li>Copia tu texto, y comparte con tus amigos</li>
+</ol>
+<h3 class = "texFinal">No olvides enviar el número que pusiste para que lo puedan descifrar. </h3>
+<button  class="close" id="btn_close2">cerrar</button>
+</div>
+            
           </div>
         </div>
+      </div>
     
-
+      <div class="content">
         <form id="form_cipher">
 
           <div class="btns">
@@ -55,7 +69,7 @@
             <button id="btn_clean_form">Limpiar</button>
             <button id="btn-copy">Copiar traducción</button>
         </div>
-      </div>  
+      </div>    
 <script src="cipher.js"></script>
 <script src="index.js"></script>
   </body>

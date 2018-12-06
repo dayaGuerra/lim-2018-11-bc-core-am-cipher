@@ -34,3 +34,30 @@ outputText.select();
 document.execCommand('copy');
 
 });
+
+const que = document.getElementById('select');
+const como = document.getElementById('open_why');
+const infEncrypted = document.getElementById('inf_encrypted');
+const point = document.getElementById('point');
+const btnClose1 = document.getElementById('btn_close1');
+const btnClose2 = document.getElementById('btn_close2');
+que.addEventListener('click', ()=>{
+  infEncrypted.style.display = 'block';
+   point.style.display = 'none';
+   
+ })
+
+como.addEventListener('click', ()=>{
+  point.style.display = 'block';
+  infEncrypted.style.display = 'none';
+ })
+
+btnClose1.addEventListener('click', ()=>{
+infEncrypted.style.display = 'none';
+
+})
+
+btnClose2.addEventListener('click', ()=>{
+point.style.display = 'none';
+
+})
